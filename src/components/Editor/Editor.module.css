@@ -34,4 +34,73 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-top: 0;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.detail .row{
+    display: flex;
+    gap: 20px;
+}
+
+.detail .column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.detail .row > div{
+    flex: 1;
+}
+
+.chips{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.chip{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 20px;
+    background-color: #808080;
+
+}
+
+.chip p{
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: #fff;
+}
+
+.chips .active{
+    background-color: #239ce2;
+}
+
+.body button{
+    width: fit-content;
+    padding: 8px 16px;
+    border-radius: 15px;
+    background-color: #239ce2;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    transition: 200ms;
+}
+.body button:active{
+    transform: translateY(2px);
 }
